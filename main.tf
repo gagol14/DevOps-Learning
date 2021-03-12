@@ -30,7 +30,7 @@ resource "azurerm_storage_account" "StorAcc1" {
 
 #Container
 resource "azurerm_storage_container" "Cont1" {
-  name = "iso-folder"
+  name = "iso-folder-1"
   storage_account_name = azurerm_storage_account.StorAcc1.name
   container_access_type = "private"
 }
