@@ -20,7 +20,7 @@ resource "azurerm_resource_group" "rg" {
 
 #Storage account
 resource "azurerm_storage_account" "StorAcc1" {
-  name = "hwnafvab19962021bubbub"
+  name = "hwnafvab19962021bub12"
   resource_group_name = azurerm_resource_group.rg.name
   location = azurerm_resource_group.rg.location
   account_kind = "StorageV2"
@@ -30,7 +30,7 @@ resource "azurerm_storage_account" "StorAcc1" {
 
 #Container
 resource "azurerm_storage_container" "Cont1" {
-  name = "iso-folder-1"
+  name = "iso-folder-12"
   storage_account_name = azurerm_storage_account.StorAcc1.name
   container_access_type = "private"
 }
